@@ -29,9 +29,9 @@ int main( int argc, char *argv[] )
     
     for ( int i{ 1 }; i < argc; i++ )
     {
-        if ( string(argv[i]) == "-b" )
+        if ( string(argv[i]) == "--b" )
             op.max_bar = std::stoul( argv[i + 1] );
-        else if ( string(argv[i]) == "-f" )
+        else if ( string(argv[i]) == "--f" )
             op.fps = std::stoul( argv[i + 1] );
         else
             op.filepath = string( argv[i] );
