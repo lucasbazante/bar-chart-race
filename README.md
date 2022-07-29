@@ -3,6 +3,8 @@
 <!-- TODO -->
 ### Welcome to the Bar Chart Race!
 
+<img src="./screenshots/frame_1.png">
+
 This project displays a race between bars in a bar chart, a common data visualization technique to present growth
 of categorical data over time.
 
@@ -50,5 +52,8 @@ As said before, a folder with proper data files is already on the repository, bu
 An example of a run with a datafile from the data folder and all the options available would be: 
 
 ```console
-$ ./bcr -b 7 -f 12 ../data/cities.txt
+$ ./bcr --b 7 ../data/cities.txt
 ```
+<img src="./screenshots/start_prompt.png" width="1200px">
+
+This'll get the start prompt above. Just press Enter and enjoy the race!
