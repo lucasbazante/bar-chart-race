@@ -10,13 +10,15 @@ of categorical data over time.
 
 In this project, we put 1 up to 15 horizontal bars in a chart to race,
 each of the bars representing a data object (which is part of a category), with its length representing this data point's value.
+
 The race follows the data in a temporal series, advancing through timestamps. All the data, timestamps, labels and such are gotten from
 a datafile, passed by the user.
 
 Each category will have its own color, and the program has up to 14 colors. In the case that the number of categories surpasses the number of colors, all the categories will have the same color.
 
-The race is done by printing out "BarChart" objects, each one representing a "frame" of the race, with its own bars, values, and associated to a single timestamp.
-The illusion of animation is done by pausing the execution of our program based on a set value "FPS" before printing out the next chart, and rolling up the screen after each chart is printed.
+The race is done by printing out chart objects, each one representing a frame of the race, with its own bars, values, and associated to a single timestamp.
+
+The illusion of animation is done by pausing the execution of our program based on a set value FPS before printing out the next chart, and rolling up the screen after each chart is printed.
 
 # Compiling
 
