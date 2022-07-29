@@ -18,20 +18,19 @@ The illusion of animation is done by pausing the execution of our program based 
 
 # Compiling
 
-<!-- TODO -->
 First of all, in the main folder, unzip the file that contains all the data. This can be done in a Linux Terminal quite easily, just by writing out: 
 
 ```console
-unzip data.zip
+$ unzip data.zip
 ```
 
 Next, create the folder where you'll build the executables, go into it and build with CMake, as follows:
 
  ```console
-mkdir build
-cd build
-cmake ../
-cmake --build .
+$ mkdir build
+$ cd build
+$ cmake ../
+$ cmake --build .
  ```
 
 # Running
@@ -39,10 +38,11 @@ cmake --build .
 With the project built, this will be the syntax of the command for running the race (please run from inside the build folder): 
 
 ```console
-./bcr [<options>] <data_file_path>
+$ ./bcr [<options>] <data_file_path>
     Options:
         --b <num>            Maximum number of bars in the race, from 1 to 15. Default = 5.
-        --f <num>            Number of frames presented per second (animation speed), from 1 to 24. Default = 24.
+        --f <num>            Number of frames presented per second (animation speed), 
+                               from 1 to 24. Default = 24.
 ```
 The options are auto adjusted inside the program, so if you go out of range, it'll self adjust to the maximum of the parameter. After the options goes the path to the data textual file.
 As said before, a folder with proper data files is already on the repository, but feel free to produce new ones, just look at the format of the file and get your own going.
@@ -50,5 +50,5 @@ As said before, a folder with proper data files is already on the repository, bu
 An example of a run with a datafile from the data folder and all the options available would be: 
 
 ```console
-./bcr -b 7 -f 12 ../data/cities.txt
+$ ./bcr -b 7 -f 12 ../data/cities.txt
 ```
